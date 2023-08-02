@@ -10,7 +10,7 @@ import java.util.List;
 @RequestMapping("/moto")
 public interface MotoFeignClient {
     @PostMapping
-    public Moto save(@RequestBody Moto carro);
+    public Moto save(@RequestBody Moto moto);
 
     @GetMapping("/usuario/{usuarioId}")
     public List<Moto> getMotos(@PathVariable("usuarioId") int usuarioId);
